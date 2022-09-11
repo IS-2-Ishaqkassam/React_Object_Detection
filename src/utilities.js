@@ -26,7 +26,7 @@ export const drawRect = (video, canvas, detections, ctx) => {
 		const [x, y, width, height] = prediction["bbox"]
 		const text = prediction["class"]
 
-		if (prediction["class"] == "mouse") {
+		if (prediction["class"] == "cell phone") {
 			cupwidth = prediction["bbox"][2]
 			cupheight = prediction["bbox"][3]
 			console.log("Writing", prediction["class"], prediction["bbox"])
