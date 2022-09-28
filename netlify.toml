@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://127.0.0.1:5000/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
