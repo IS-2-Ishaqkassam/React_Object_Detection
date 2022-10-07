@@ -47,7 +47,7 @@ export const drawRect = (video, canvas, detections, ctx) => {
 			payload.append("file", file, "image.jpeg")
 
 			try {
-				fetch("/api/predict", {
+				fetch("http://localhost:5000/predict", {
 					method: "POST",
 					body: payload,
 				}).then((response) => {
