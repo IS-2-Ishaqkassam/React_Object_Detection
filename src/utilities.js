@@ -48,6 +48,7 @@ export const drawRect = (video, canvas, detections, ctx) => {
 
 			try {
 				fetch("http://localhost:5000/predict", {
+					// fetch("https://ishaq123.pythonanywhere.com/predict", {
 					method: "POST",
 					body: payload,
 				}).then((response) => {
