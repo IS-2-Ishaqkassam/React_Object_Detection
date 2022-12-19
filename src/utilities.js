@@ -25,8 +25,9 @@ export const drawRect = (video, canvas, detections, ctx) => {
 		// Extract boxes and classes
 		const [x, y, width, height] = prediction["bbox"]
 		const text = prediction["class"]
-
-		if (prediction["class"] == "cell phone") {
+		//use 'cell phone for phones'
+		//use 'car' for cars
+		if (prediction["class"] == "car") {
 			cupwidth = prediction["bbox"][2]
 			cupheight = prediction["bbox"][3]
 			console.log("Writing", prediction["class"], prediction["bbox"])
